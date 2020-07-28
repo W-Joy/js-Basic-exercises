@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 弹出一个输入框(prompt),让用户输入年龄
+        // 把用户输入的值用变量保存起来，把前面输入的年龄与所要输出的内容进行拼接
+        // 最后使用alert语句弹出输出结果
+        // var age = prompt('请输入您的年龄');
+        // str = '你今年' + age + '岁';
+        // alert(str)
+
+        // var num1 = prompt('请您输入第一个值'); //先弹出一个输入框，提示用户输入第一个值，保存起来
+        // var num2 = prompt('请您输入第二个值'); //再弹出第二个输入框，提示用户输入第二个值，保存
+        // num = +parseFloat(num1) + parseFloat(num2); //把这两个值相加，并把值赋值给新的变量
+        // alert(num) //输出结果
+
+        // var username = prompt('请输入您的名字');
+        // var age = prompt('请输入您的年龄');
+        // var sex = prompt('请输入您的性别');
+        // alert('您的姓名是:' + username + '\n' + '您的年龄是:' + age + '\n' + '您的性别是:' + sex)
+        // 且或非
+        // console.log(3 < 5 && 5 < 6); //&&且，一假既假，只要有一个假的最后的值为false,两个为真为true
+        // console.log(3 < 5 || 5 < 6); //||且，一真既真，只要有一个真的最后的值为true,两个为真为false
+
+        // var age = prompt('请输入您的年龄');
+        // if (age < 18) {
+        //     alert('您的年龄不符合要求，不予进入')
+        // } else {
+        //     alert('欢迎您的到来')
+        // }
+
+        // var username = prompt('请输入您的名字');
+        // if (username === '刘德华') {
+        //     alert('您中了五百万')
+        // } else {
+        //     alert('您没有中奖')
+        // };
+
+        // var num = prompt('请输入您的分数');
+        // if (num >= 85) {
+        //     alert('A')
+        // } else if (num >= 70) {
+        //     alert('B')
+        // } else if (num >= 60) {
+        //     alert('C')
+        // } else {
+        //     alert('D')
+        // };
+
+        // //三元表达式
+        // var i = 10;
+        // var j = i > 20 ? '继续执行' : '结束';
+        // alert(j)
+
+        // switch case
+        // var fruit = prompt('请输入您要买的水果');
+        // switch (fruit) {
+        //     case '芒果':
+        //         alert('芒果10元/斤')
+        //         break;
+        //     case '香蕉':
+        //         alert('香蕉2元/斤')
+        //         break;
+        //     case '苹果':
+        //         alert('苹果5元/斤')
+        //         break;
+        //     case '西瓜':
+        //         alert('西瓜1元/斤')
+        //         break;
+        //     default:
+        //         alert('没有这种水果')
+        //         break;
+        // }
+
+        //For循环
+        // var sum = 0;
+        // for (var i = 1; i <= 100; i++) {
+        //     sum += i
+        // }
+        // document.write(sum);
+
+        //1~100之间偶数之和
+        // //输出1~100之间个位数为3的数
+        // var sum = 0;
+        // for (i = 1; i <= 100; i++) {
+        //     if (i % 10 == 3) {
+        //         // document.write(i + '<br>');
+        //         sum += i;
+        //     }
+        // }
+        // document.write(sum)
+
+        //函数
+        // function size(num1, num2) {
+        //     //方法1
+        //     // if (num1 > num2) {
+        //     //     return num1;
+        //     // } else {
+        //     //     return num2;
+        //     // }
+        //     //方法2
+        //     return num1 > num2 ? num1 : num2;
+        // }
+        // console.log(size(5, 8));
+
+        // //作用域：把变量和函数提升到当前作用域最前面在进行计算
+        // f1();
+        // console.log(c);
+        // console.log(b);
+        // console.log(a);
+
+        // function f1() {
+        //     var a = b = c = 9;
+        //     console.log(a);
+        //     console.log(b);
+        //     console.log(c);
+        // }
+
+        // //创建对象的三种方法
+        // // 方法一
+        // var obj = {
+        //     username: '张三',
+        //     age: 18,
+        //     sex: '男'
+        // }
+        // document.write(obj.username);
+        // document.write('</br>');
+        // document.write(obj['username']);
+        //利用new Object创建对象
+        // var obj = new Object();
+        // obj.username = '鸣人';
+        // obj.age = '19岁';
+        // obj.sex = '男';
+        // obj.skill = function() {
+        //     console.log('影分身术');
+        // }
+        // console.log(obj.age);
+
+        // //利用构造函数创建对象:函数名首字母必须大写,调用函数必须使用new,没调用一次函数等于创建了一个对象
+        // function Star(username, age, sex) {
+        //     this.username = username;
+        //     this.age = age;
+        //     this.sex = sex;
+        //     this.sing = function(sang) {
+        //         console.log(sang);
+        //     }
+        // }
+        // var obj = new Star('张三', 19, '男');
+        // obj.sing('明天');
+
+        // //遍历对象
+        // var object = {
+        //     name: '张三',
+        //     age: 18,
+        //     sex: '男',
+        // }
+        // for (const key in object) {
+        //     console.log(key);
+        //     console.log(object[key]);
+        // }
+
+        //日期对象Date
+        // var date = new Date();//括号里没内容则显示当前时间
+        // console.log(date);
+        // var date = new Date('2020-7-7 23:23:23');
+        // var month = date.getMonth() + 1;
+        // var day = date.getDay();
+        // var arr = ['星期天', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
+        // console.log(date);
+        // console.log(date.getFullYear()); //返回年份
+        // console.log(month); //返回月份，因为返回的月份会比实际小一个月，所以后面要+1
+        // console.log(date.getDate()); //返回天数
+        // console.log(arr[day]); //返回星期，星期天是0,其他对应数字对应星期
+        // console.log(date.getHours()); //返回时数
+        // console.log(date.getMinutes()); //返回分钟
+        // console.log(date.getSeconds()); //返回秒数
+        // console.log('今天是：' + date.getFullYear() + '年' + month + '月' + date.getDate() + '日' + date.getHours() + '时' + date.getMinutes() + '分' + date.getSeconds() + '秒' + arr[day]);
+
+        // //返回1970年1月1日到现在的总毫秒数(时间戳)
+        // var date = new Date();
+        // console.log(date.getTime()); //方法一
+        // console.log(date.valueOf()); //方法二
+        // //方法三
+        // var date1 = +new Date();
+        // console.log(date1);
+        // //方法四  Html5新增
+        // console.log(Date.now());
+
+        // //字符串对象:把字符串里面的内容当成元素 不可变性
+        // //根据字符返回位置indexof()
+        // var str = 'abcdefgabc';
+        // console.log(str.indexOf('c')); //返回结果：2
+        // console.log(str.indexOf('c', 3)); //返回结果：9,意思是从下标为3之后开始查找
+
+        // //根据下标位置返回字符对象中的字符
+        // //1.charAt(index)
+        // var str = 'abcdef';
+        // console.log(str.charAt(3));//返回的值：d
+
+        // //2.charCodeAt(index)   返回相对应下标的ASCII的值，主要用途是通过ASCII来判断用户键盘按了什么键
+        // var str = 'abcdef';
+        // console.log(str.charCodeAt(0)); //返回的值：97
+
+        // //(3)html5新增元素   str[index]
+        // var str = 'abcdef';
+        // console.log(str[3]); //返回的值：d
+
+        // //截取字符串对象 substr(下标，截取个数)
+        // var str = '63248451';
+        // console.log(str.substr(1, 4));//返回的值：3248
+
+        // //替换字符串对象中的字符  replace('被替换的字符'，'替换成什么字符')  若有相同字符，它只会替换第一个字符
+        // var str = 'red';
+        // console.log(str.replace('e', 'a'));//返回结果：rad
+
+        // //列出字符串中出现最多的字符，并统计其次数
+        // var str = 'aadhasdhbgdncbagds';
+        // var str1 = [];
+        // for (var i = 0; i <= str.length; i++) {
+        //     if (str1[str.charAt(i)]) {
+        //         str1[str.charAt(i)]++;
+        //     } else {
+        //         str1[str.charAt(i)] = 1;
+        //     }
+        // }
+        // console.log(str1);
+        // //输出字符最多的次数
+        // var max = 0;
+        // var math = '';
+        // for (var key in str1) {
+        //     if (str1[key] > max) {
+        //         max = str1[key]
+        //         math = key;
+        //     }
+        // }
+        // console.log('最多的字符是:' + math + '次数为:' + max);
+
+        // //把字符串对象转换成数组  split('取决于字符串用什么符号分隔')
+        // var str = 'red^green^black^white';
+        // console.log(str.split('^')); // 返回：["red", "green", "black", "white"]
+
+        // //字符串对象大小写转换
+        // //(1)转换成大写 toUpperCase()
+        // var str = 'abcdefg'
+        // console.log(str.toUpperCase());
+
+        // //(1)转换成小写 toLowerCase()
+        // var str1 = 'ABCDEFG'
+        // console.log(str1.toLowerCase());
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

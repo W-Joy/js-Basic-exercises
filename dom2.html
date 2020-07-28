@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div getTime="10" data-index="5" data-list-name="joy"></div>
+    <script>
+        var dom = document.querySelector('div');
+        console.log(dom.getAttribute('getTime')); //获取节点中自定义属性getTime的值
+        dom.setAttribute('data-time', 33); //给获取的节点添加自定义属性并赋值
+        console.log(dom.getAttribute('data-index')); //获取节点中自定义属性data-index的值
+        console.log(dom.getAttribute('data-list-name')); //获取节点中自定义属性data-list-name的值
+        //html5新增属性，只能用来获取以data-开头的自定义属性 兼容性：IE11支持
+        console.log(dom.dataset); //用来获取节点中以data-开头的自定义属性的集合
+        console.log(dom.dataset.index);
+        //如果节点中以data开头的自定义属性有多个-连接，如data-list-name，我们获取的时候应该用驼峰命名法
+        console.log(dom.dataset.listName);
+    </script>
+</body>
+
+</html>

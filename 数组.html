@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数组</title>
+    <script>
+        // //数组
+        // var arr = ['星期一', ' 星期二', '星期三', '星期四', '星期五', '星期六', '星期天'];
+        // console.log(arr[6]);
+
+        //遍历数组
+        // var arr = [12, 33, 66, 44, 7, 77, 9, 6, 55];
+        // for (i = 0; i <= arr.length; i++) {
+        //     console.log(arr[i]);
+        // }
+
+        // //求数组中元素的最大值
+        // var arr = [12, 33, 66, 44, 7, 77, 9, 6, 55];
+        // var max = arr[0];
+        // for (var i = 0; i <= arr.length; i++) {
+        //     if (arr[i] > max) {
+        //         max = arr[i];
+        //     }
+        // }
+        // console.log(max);
+
+        // //冒泡排序
+        // var arr = [6, 44, 7, 5, 8, 9, 46, 25, 35];
+        // for (var i = 0; i <= arr.length - 1; i++) {
+        //     for (var j = 0; j <= arr.length - i - 1; j++) {
+        //         if (arr[j] > arr[j + 1]) {
+        //             var temp = arr[j];
+        //             arr[j] = arr[j + 1];
+        //             arr[j + 1] = temp;
+        //         }
+        //     }
+        // }
+        // console.log(arr);
+
+        // //判断是否为数组
+        // var arr = [1, 2, 3, 4, 5, 6];
+        // console.log(arr instanceof Array);//方法一
+        // console.log(Array.isArray(arr));//方法二
+
+        // // 在数组前面添加元素 arr.unshift
+        // var arr = [1, 2, 3, 4];
+        // // arr.unshift(7, 8, 9); //添加元素
+        // console.log(arr.unshift(7, 8, 9)); //输出时添加元素并返回的是薪数组的长度
+        // console.log(arr);
+
+        // //在数组后面添加元素 push
+        // var arr1 = [23, 45, 67];
+        // // arr.push(7,8,9);//添加元素
+        // console.log(arr1.push(7, 8, 9)); //输出时添加元素并返回的是薪数组的长度
+        // console.log(arr1);
+
+        // //删除数组第一个元素,只能删一个 shift
+        // var arr2 = [1, 2, 3, 4];
+        // // arr2.shift(); //删除第一个元素
+        // console.log(arr2.shift()); //输出时删除元素并返回删除的那个元素
+        // console.log(arr2);
+
+        // //删除数组最后一个元素只能删一个 pop
+        // var arr3 = [1, 2, 3, 4];
+        // //arr3.pop();//删除最后一个元素
+        // console.log(arr3.pop()); //输出时删除元素并返回删除的那个元素
+        // console.log(arr3);
+
+        // //翻转数组 reverse
+        // var arr4 = [12, 23, 34, 45, 56, 67];
+        // arr4.reverse();
+        // console.log(arr4);
+
+        // //数组排序(冒泡排序)  sort
+        // var arr5 = [8, 13, 7, 2, 6, 4, 9, 1];
+        // arr5.sort(function(a, b) {
+        //     return a - b; //升序的顺序排列
+        //     // return b - a; //降序的顺序排列    
+        // });
+        // console.log(arr5);
+
+        // //数组去重
+        // function unique(arr) {
+        //     var newarr = [];
+        //     for (var i = 0; i < arr.length; i++) {
+        //         if (newarr.indexOf(arr[i]) === -1) {
+        //             newarr.push(arr[i]);
+        //         }
+        //     }
+        //     return newarr;
+        // }
+        // console.log(unique([2, 3, 5, 3, 5, 8, 6]));//返回的值：[2,3,5,8,6]
+
+        // //数组转换成字符串
+        // //1.toString()
+        // var arr = [1, 2, 3, 4];
+        // console.log(arr.toString());
+        // //2. join(分隔符)
+        // var arr1 = ['pink', 'what', 'hi', 'hello'];
+        // console.log(arr1.join('-')); //返回的值：pink-what-hi-hello
+
+        // //拼接数组 concat()
+        // var arr1 = [1, 2, 3];
+        // arr2 = [5, 6, 7];
+        // console.log(arr1.concat(arr2)); //返回的值是两个数组拼接的新数组:[1,2,3,5,6,7]
+
+        // //截取数组  slice(下标第几个开始，截取到第几个)若数值为负，代表从尾部开始
+        // var arr = [1, 2, 3, 22, 5, 22, 7, 8, 9]; 
+        // console.log(arr.slice(2, 6)); //返回的是截取元素组成的新数组：[3,22,5,22]
+
+        // // 删除数组元素 splice(第几个开始，删除几个)
+        // var arr = [1, 5, 4, 6, 9, 8, 7, 3];
+        // console.log(arr.splice(2, 3)); //返回的是删除元素组成的新数组：[4,6,9]
+        // console.log(arr); //splice()删除元素后原数组会随之改变：arr=[1,5,8,7,3]
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

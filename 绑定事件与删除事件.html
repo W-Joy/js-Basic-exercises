@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <script>
+        //添加事件
+        //传统方式添加事件，只能添加一个相同的事件
+        var btns = document.querySelectorAll('div');
+        btns[0].onclick = function() {
+            alert(11);
+            btns[0].onclick = null; //传统方法删除事件，让事件一次后失效
+        }
+
+        //addEventListener，同一个元素，同一个事件可以添加多个侦听器，IE9以上支持
+        btns[1].addEventListener('click', function() {
+            alert(22)
+        }); //若想删除事件函数不能用匿名函数
+        btns[1].addEventListener('click', fn);
+
+        function fn() {
+            alert(33);
+            btns[1].removeEventListener('click', fn)
+        };
+
+        // //attachEvent,该方法只能在IE9及以下版本浏览器使用，不推荐使用
+        // btns[2].attachEvent('onclick', fn);
+
+        // function fn() {
+        //     alert(33);
+        // };
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <script>
+        //乘法口诀
+        document.write("<table border='1'>")
+        for (var i = 9; i >= 1; i--) {
+            document.write("<tr>")
+            for (var j = 1; j <= i; j++) {
+                document.write('<td>' + i + 'x' + j + '=' + (i * j) + '</td>')
+            }
+            document.write("</tr>")
+        }
+        document.write("</table>")
+    </script> -->
+    <script>
+        //百元买百鸡，公鸡5元一只，母鸡3元一只，小鸡一元3只
+        for (i = 0; i <= 20; i++) {
+            for (j = 0; j <= 33; j++) {
+                for (z = 0; z <= 300; z++) {
+                    if ((i + j + z == 100) && (5 * i + 3 * j + z / 3 == 100)) {
+                        document.write("公鸡：" + i + "母鸡：" + j + "小鸡：" + z + "<br/>")
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

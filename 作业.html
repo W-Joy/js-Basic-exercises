@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作业</title>
+    <script>
+        // //判断时间段
+        // var time = prompt('请输入当前时间');
+        // if (time >= 6 && time < 9) {
+        //     alert('早上好')
+        // } else if (time >= 9 && time < 11) {
+        //     alert('上午好')
+        // } else if (time >= 11 && time < 14) {
+        //     alert('中午好')
+        // } else if (time >= 14 && time < 18) {
+        //     alert('下午好')
+        // } else if (time >= 18 && time < 22) {
+        //     alert('晚上好')
+        // } else {
+        //     alert('已经深夜了，您该睡觉了')
+        // }
+
+        // //比较两个值大小，并输出大的值
+        // var a = 10;
+        // b = 15;
+        // ret = a > b ? a : b;
+        // alert(ret)
+        //   //判断奇数偶数 
+        // var c = 3;
+        // if (c % 2 == 0) {
+        //     alert('c是偶数')
+        // } else {
+        //     alert('c是奇数')
+        // };
+
+        // //用户输入1~7，返回星期几
+        // var week = prompt('请输入1~7的数字');
+        // switch (week) {
+        //     case '1':
+        //         alert('今天星期一')
+        //         break;
+        //     case '2':
+        //         alert('今天星期二')
+        //         break;
+        //     case '3':
+        //         alert('今天星期三')
+        //         break;
+        //     case '4':
+        //         alert('今天星期四')
+        //         break;
+        //     case '5':
+        //         alert('今天星期五')
+        //         break;
+        //     case '6':
+        //         alert('今天星期六')
+        //         break;
+        //     case '7':
+        //         alert('今天星期天')
+        //         break;
+        // }
+
+        // //根据口袋钱的数量来判断怎么请客
+        // var money = prompt('你口袋有多少钱');
+        // if (money >= 2000) {
+        //     alert('请大家吃西餐')
+        // } else if (money >= 1500 && money < 2000) {
+        //     alert('请大家吃快餐')
+        // } else if (money >= 1000 && money < 1500) {
+        //     alert('请你们喝饮料')
+        // } else if (money >= 500 && money < 1000) {
+        //     alert('我们去吃棒棒糖吧')
+        // } else {
+        //     alert('下次就得把钱带够')
+        // }
+
+        // //分数转换，评优
+        // var fraction = prompt('请输入您的分数');
+        // if (fraction >= 90) {
+        //     alert('A')
+        // } else if (fraction >= 80 && fraction < 90) {
+        //     alert('B')
+        // } else if (fraction >= 70 && fraction < 80) {
+        //     alert('C')
+        // } else if (fraction >= 60 && fraction < 70) {
+        //     alert('D')
+        // } else if (fraction < 60) {
+        //     alert('E')
+        // }
+
+        // //1~100所有奇数的和
+        // var sum = 0;
+        // for (i = 1; i <= 100; i++) {
+        //     if (i % 2 == 1) {
+        //         sum += i;
+        //     }
+        // }
+        // alert(sum);
+
+        // // 9*9乘法表
+        // document.write('<table>')
+        // for (var i = 9; i >= 1; i--) {
+        //     document.write('<tr border="1">')
+        //     for (var j = 1; j <= i; j++) {
+        //         document.write('<td>' + j + 'x' + i + '=' + (i * j))
+        //     }
+        // }
+        // document.write('</tr>')
+        // document.write('</table>')
+
+        // //将一个数组内大于等于10的元素选出来，放入新的数组
+        // var arr = [1, 2, 3, 4, 77, 88, 55, 24, 6];
+        // var arr1 = [];
+        // for (var i = 0; i <= arr.length; i++) {
+        //     if (arr[i] >= 10) {
+        //         arr1[arr1.length] = arr[i];
+        //     }
+        // }
+        // console.log(arr1);
+        // //用构造函数创建一个对象
+        // function Game(username, type, blood) {
+        //     this.username = username;
+        //     this.type = type;
+        //     this.blood = blood;
+        //     this.attack = function(mode) {
+        //         console.log(mode);
+        //     }
+        // }
+        // var obj = new Game('后裔', '射手', 100);
+        // obj.attack('远程');
+        // console.log(obj.type);
+        // //简易计算机
+        // function calc() {
+        //     var operator = prompt('欢迎使用简易计算机\n1.加法运算\n2.减法运算\n3.乘法运算\n4.除法运算\n5.退出\n请输入运算方式');
+        //     var num1 = prompt('请输入');
+        //     var num2 = prompt('请输入');
+        //     var num = 0;
+        //     switch (operator) {
+        //         case '1':
+        //             num = parseFloat(num1) + parseFloat(num2);
+        //             break;
+        //         case '2':
+        //             num = parseFloat(num1) - parseFloat(num2);
+        //             break;
+        //         case '3':
+        //             num = parseFloat(num1) * parseFloat(num2);
+        //             break;
+        //         case '4':
+        //             num = parseFloat(num1) / parseFloat(num2);
+        //             break;
+        //         case '5':
+
+        //             break;
+
+        //         default:
+        //             break;
+        //     }
+        //     return num;
+        // }
+        // alert(calc());
+
+        // //猜随机整数的值
+        // function getRandom(min, max) {
+        //     return Math.floor(Math.random() * (max - min + 1)) + min;
+        // }
+        // var random = getRandom(1, 10);
+        // while (true) {
+        //     var num = prompt('请输入1~10之间的数字');
+        //     if (num > random) {
+        //         alert('大了');
+        //     } else if (num < random) {
+        //         alert('小了');
+        //     } else if (num = random) {
+        //         alert('您猜对了');
+        //         break;
+        //     }
+        // }
+
+        // //封装一个函数，用来获取时分秒，格式00:00:00
+        // function getTime() {
+        //     var time = new Date();
+        //     var s = time.getHours();
+        //     s = s < 10 ? '0' + s : s;
+        //     var f = time.getMinutes();
+        //     f = f < 10 ? '0' + f : f;
+        //     var m = time.getSeconds();
+        //     m = m < 10 ? '0' + m : m;
+        //     return s + ':' + f + ':' + m;
+        // }
+        // console.log(getTime());
+
+        // //封装一个倒计时的函数
+        // function conutDown(time) {
+        //     var now = +new Date(); //获取当前毫秒数
+        //     var times = +new Date(time); //获取输入时间的毫秒数
+        //     var spare = (times - now) / 1000; //得到剩余时间的秒数，1秒=1000毫秒，所以要除以1000；
+        //     var day = parseInt(spare / 60 / 60 / 24); //剩余时间数转换的天数
+        //     var hours = parseInt(spare / 60 / 60 % 24); //剩余时间数转换的时数
+        //     hours = hours < 10 ? '0' + hours : hours;
+        //     var minutes = parseInt(spare / 60 % 60); //剩余时间转换的分钟 
+        //     minutes = minutes < 10 ? '0' + minutes : minutes;
+        //     var second = parseInt(spare % 60); //剩余时间转换的秒数
+        //     second = second < 10 ? '0' + second : second;
+        //     return day + '天' + hours + '时' + minutes + '分' + second + '秒';
+        // }
+        // console.log(conutDown('2020-7-9 18:00:00'));
+
+        // //把数组中大于10的元素删除，剩余的放入新数组
+        // var arr = [1, 23, 5, 6, 57, 2, 55, 7, 99];
+        // var arr1 = [];
+        // for (var i = 0; i <= arr.length; i++) {
+        //     if (arr[i] < 10) {
+        //         arr1.push(arr[i]);
+        //     }
+        // }
+        // console.log(arr1);
+
+        // //查找字符串对象 'adonxhahsaca'中a的位置以及次数
+        // var str = 'adonxhahsaca';
+        // var i = str.indexOf('a');
+        // var num = 0;
+        // while (i !== -1) {
+        //     console.log(i);
+        //     num++;
+        //     i = str.indexOf('a', i + 1);
+        // }
+        // console.log('次数:' + num);
+
+        // //查找数组对象 arr = [red,blue,gray,red,green,red,orange,white,black,red]中red的位置以及次数
+        // var arr = ['red', 'blue', 'gray', 'red', 'green', 'red', 'orange', 'white', ' black', 'red'];
+        // var i = arr.indexOf('red');
+        // var num = 0;
+        // while (i !== -1) {
+        //     console.log(i);
+        //     num++;
+        //     i = arr.indexOf('red', i + 1);
+        // }
+        // console.log('次数:' + num);
+
+        // //给定一个字符串'haihasdiu2r9r0rei72r4',解决一下问题
+        // var str = 'haihasdiu2r9r0rai72r4';
+        // //(1)字符串的长度
+        // console.log(str.length);
+        // //(2)取出指定位置的字符，如：0,3,5,9
+        // console.log(str.charAt(3)); //根据下标，返回对应的值
+        // //(3)查找字符串对象是是否存在指定的字符，如：h,p
+        // console.log(str.indexOf('h')); //若有值，则返回第一个的下标数
+        // console.log(str.indexOf('p')); //若无，则返回-1
+        // //(4)替换指定的字符
+        // console.log(str.replace('a', 'b')); //这里只会替换第一个指定字符
+        // while (str.indexOf('a') !== -1) {
+        //     str = str.replace('a', 'b')
+        // }
+        // console.log(str); //用while循环是全部替换
+        // //(5)截取指定位置的字符如：1-5
+        // console.log(str.substr(1, 5));
+        // //(6)
+        // var str1 = [];
+        // for (var i = 0; i <= str.length; i++) {
+        //     if (str1[str.charAt(i)]) {
+        //         str1[str.charAt(i)]++;
+        //     } else {
+        //         str1[str.charAt(i)] = 1;
+        //     }
+        // }
+        // console.log(str1);
+        // //输出字符最多的次数
+        // var max = 0;
+        // var math = '';
+        // for (var key in str1) {
+        //     if (str1[key] > max) {
+        //         max = str1[key]
+        //         math = key;
+        //     }
+        // }
+        // console.log('最多的字符是:' + math + '次数为:' + max);
+
+        // //建一个row行， column列的表， 内容规律排列
+        // function table(row, column) {
+        //     document.write('<table border="1" width="100%">')
+        //     for (var i = 0; i < row; i++) {
+        //         document.write('<tr>')
+        //         for (j = 0; j < column; j++) {
+        //             document.write('<td>' + (row * 1 * i + (j + 1) * 1) + '</td>')
+        //         }
+        //         document.write('</tr>')
+        //     }
+        //     document.write('</table>')
+        // }
+        // table(20, 20);
+
+        // //利用函数求数组中的最大值
+        // function getMax() {
+        //     var max = arguments[0];
+        //     for (var i = 1; i < arguments.length; i++) {
+        //         if (arguments[i] > max) {
+        //             max = arguments[i];
+        //         }
+        //     }
+        //     return max;
+        // }
+        // console.log(getMax(2, 6, 4, 99, 5, 7, 33, 44));
+    </script>
+
+</head>
+
+<body>
+    <!-- <script>
+        // //对比两个输入框的值，并输出最大值
+        // function big() {
+        //     var a = document.getElementById('le').value;
+        //     var b = document.getElementById('ri').value;
+        //     if (a > b) {
+        //         document.write(a)
+        //     } else {
+        //         document.write(b)
+        //     }
+        // }
+    </script>
+    <form action="">
+        <input id="le" type="text"> VS
+        <input id="ri" type="text">
+        <input type="button" value="最大的数是" onclick="big()">
+    </form> -->
+</body>
+
+</html>

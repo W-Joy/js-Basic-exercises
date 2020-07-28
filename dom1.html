@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+
+</head>
+
+<body>
+    <p id="hi">hello</p>
+    <ul class="box">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+    <script>
+        var dom = document.getElementById('hi'); //根据id来获取元素
+        var lis1 = document.getElementsByTagName('li'); //根据标签名来获取元素
+        var lis2 = document.getElementsByClassName('box'); //根据类型来获取元素
+        var lis3 = document.querySelector('li'); //根据指定选择器返回第一个元素
+        var lis4 = document.querySelectorAll('li'); //根据指定选择器返回全部的元素
+        var bodyEle = document.body; //获取body
+        var htmlEle = document.documentElement; //获取html
+        var btn = document.getElementById('hi')
+            // btn.disabled = ture; //表示被点击过一次被禁用，只能点击一次
+    </script>
+</body>
+
+</html>

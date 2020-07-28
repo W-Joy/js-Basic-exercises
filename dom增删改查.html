@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    button {
+        border: none;
+        background-color: white;
+    }
+</style>
+
+<body>
+    <div class="box">
+        <p>123</p>
+    </div>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3 <span>+</span></li>
+    </ul>
+    <script>
+        //添加节点
+        var pa = document.createElement('p'); //创建一个span元素节点
+        var pd = document.createElement('p'); //创建一个span元素节点
+        pa.innerHTML = '111';
+        pd.innerHTML = '333';
+        var box = document.querySelector('.box');
+        //给父级添加子元素节点
+        box.appendChild(pa); //添加的元素节点会在原有的子元素后面
+        box.insertBefore(pd, box.children[0]); //在指定位置添加子元素节点,[0]表示的是下标位置
+
+        //删除节点 removeChild
+        var ul = document.querySelector('ul');
+        ul.removeChild(ul.children[0]);
+    </script>
+</body>
+
+</html>

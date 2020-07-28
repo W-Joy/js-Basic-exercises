@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box">
+        <ul class="app">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+        <span>hello</span>
+    </div>
+    <script>
+        var dom = document.querySelector('.app');
+        console.log(dom.parentNode); //通过parentNode来获取元素的父节点，只能获取上一级的父节点 
+        //通过children来获取元素的字子节点,包含元素节点和文本节点，要想获取其中的元素节点要通过nodeType 不推荐使用
+        console.log(dom.childNodes); //得到的子节点包含元素节点和文本节点
+        for (var i = 0; i < dom.childNodes.length; i++) {
+            if (dom.childNodes[i].nodeType == 1) {
+                console.log(dom.childNodes[i]);
+            }
+        } //得到元素节点的方法
+        console.log(dom.children); //通过children来获取元素的子节点的集合
+        console.log(dom.firstchild); //通过fristchild来获取元素的子节点的第一个节点，包含元素节点和文本节点，不推荐使用
+        console.log(dom.children[0]); //通过children[]来获取元素的子节点的第一个元素节点
+        console.log(dom.children[dom.children.length - 1]); //通过children[]来获取元素的子节点的最后一个元素节点
+
+        //IE9以上支持
+        console.log(dom.firstElementChild); //通过firstElementChild来获取子节点的第一个元素节点
+        console.log(dom.lastElementChild); //通过lastElementChild来获取子节点的最后一个元素节点
+
+        console.log(dom.nextSibling); //nextSibling得到的是下一个同级节点，但是包含元素节点和文本节点 不推荐使用
+        console.log(dom.previousSibling); //previousSibling得到的是上一个同级节点，但是包含元素节点和文本节点 不推荐使用
+
+        //IE9以上支持
+        console.log(dom.nextElementSibling) //得到的是下一个同级元素节点
+        console.log(dom.previousElementSibling) //得到的上一个同级元素节点
+            //封装能兼容获取元素节点的方式的函数
+        function nextElementSibling(element) {
+            var ele = element;
+            while (ele = ele.nextElementSibling) {
+                if (ele.nodeType === 1) {
+                    return ele;
+                }
+            }
+            return null;
+        }
+    </script>
+</body>
+
+</html>
