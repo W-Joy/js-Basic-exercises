@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .box {
+        overflow: auto;
+        padding: 10px;
+        width: 200px;
+        height: 200px;
+        border: 5px solid red;
+    }
+</style>
+
+<body>
+    <div class="box"> 烤鸡翅膀 烤鸡翅膀 烤鸡翅膀 烤鸡翅膀 烤鸡翅膀 烤鸡翅膀 烤鸡翅膀 烤鸡翅膀 烤鸡翅膀 烤鸡翅膀 烤鸡翅膀 烤鸡翅膀 烤鸡翅膀 烤鸡翅膀 烤鸡翅膀 烤鸡翅膀 烤鸡翅膀 烤鸡翅膀 烤鸡翅膀 烤鸡翅膀 烤鸡翅膀 烤鸡翅膀 烤鸡翅膀 烤鸡翅膀 烤鸡翅膀 烤鸡翅膀 烤鸡翅膀 烤鸡翅膀 烤鸡翅膀 烤鸡翅膀 烤鸡翅膀 烤鸡翅膀 烤鸡翅膀 烤鸡翅膀 烤鸡翅膀 烤鸡翅膀 烤鸡翅膀 烤鸡翅膀 烤鸡翅膀 烤鸡翅膀 烤鸡翅膀 烤鸡翅膀 烤鸡翅膀 烤鸡翅膀 烤鸡翅膀 烤鸡翅膀
+    </div>
+    <script>
+        var box = document.querySelector('.box');
+        console.log(box.offsetWidth); //包含width+padding+border
+        console.log(box.offsetTop); //盒子离上一个定位父级的大小
+        console.log(box.offsetLeft); //盒子离上一个定位父级的大小
+        console.log(box.clientWidth); //包含width+padding
+        console.log(box.clientTop); //上边框的大小
+        console.log(box.clientLeft); //左边框的大小
+        //scroll滚动事件
+        box.addEventListener('scroll', function() {
+            console.log(box.scrollTop);
+        })
+    </script>
+</body>
+
+</html>
